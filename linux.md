@@ -66,3 +66,9 @@ sudo ./pagemap 10144 0x7ffc8da82000 0x7ffc8dabc000
 # get first non-zero PFN - 35f848
 sudo echo 0x35f848 > /sys/kernel/debug/hwpoison/corrupt-pfn
 ```
+
+Enforce seccomp policy without writing any code:
+
+```
+systemd-run --user --pty --same-dir --wait --collect --service-type=exec --property="SystemCallFilter=~uname" uname -a
+```
