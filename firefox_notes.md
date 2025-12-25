@@ -68,3 +68,21 @@ All about Firefox framerates - https://searchfox.org/mozilla-release/source/modu
 image.animation_mode = none
 toolkit.cosmeticAnimations.enabled = false
 ```
+
+Disable AI shit(set it to false):
+```
+    browser.ml.enable
+    browser.ml.chat.enabled
+    browser.ml.chat.menu
+    browser.ml.chat.page
+    browser.ml.chat.page.footerBadge
+    browser.ml.chat.page.menuBadge
+    browser.ml.linkPreview.enabled
+    browser.ml.pageAssist.enabled
+    browser.tabs.groups.smart.enabled
+    browser.tabs.groups.smart.userEnabled
+    extensions.ml.enabled
+    browser.search.visualSearch.featureGate
+    extensions.ui.mlmodel.hidden
+```
+
